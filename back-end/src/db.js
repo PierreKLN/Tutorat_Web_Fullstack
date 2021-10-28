@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const filePath = "./list.md";
+const filePath = "./db/list.md";
 
 module.exports.read = () => {
     try {
@@ -24,7 +24,6 @@ module.exports.read = () => {
         }
         return ret;
     } catch(e) {
-        console.log(e);
         return [];
     }
 };

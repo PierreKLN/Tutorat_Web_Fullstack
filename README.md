@@ -18,3 +18,13 @@ Le module back-end se base sur Express, et fournis plusieurs APIs utilisées par
 - ```GET /``` permet de récupérer les différents items de la liste [IMPLEMENTÉ]
 - ```POST /``` permet de rajouter un élement dans la liste [NON IMPLEMENTÉ]
 - ```POST /update/:id``` permet de mettre à jour l'élement 'id' [NON IMPLEMENTÉ]
+
+## Docker
+
+Les 2 modules ont étés configurés pour être utilisable avec docker compose. Chaque module a un Dockerfile qui permet de créer l'image voulu, et le docker-compose.yaml à la racine permet de créer les containers pour les deux services.
+
+Utilisation:
+
+```
+docker-compose up
+```

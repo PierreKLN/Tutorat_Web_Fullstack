@@ -4,7 +4,8 @@ const cors = require("cors");
 const { read } = require("./db");
 
 const app = express();
-const port = 3001;
+// eslint-disable-next-line no-undef
+const port = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
 app.use(cors());

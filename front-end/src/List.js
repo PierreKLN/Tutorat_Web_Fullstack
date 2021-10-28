@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import config from "./config";
 
 export default function List() {
     const [list, setList] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:3001")
+        axios.get(config.BACK_END)
             .then(({ data }) => setList(data));
     });
     return <ul>
