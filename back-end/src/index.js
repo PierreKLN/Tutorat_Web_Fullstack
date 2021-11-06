@@ -16,9 +16,8 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-    console.log(req.body.text);
-    //j'essaye de voir si le post fonctionne et si je recupere bien les données a modifier apres
-    //res.send(modifier());
+
+    res.send(modifier());
    
 })
 
