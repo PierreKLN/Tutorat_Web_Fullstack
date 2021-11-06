@@ -4,7 +4,7 @@ const filePath = "./db/list.md";
 
 module.exports.modifier = () => {
     
-    fs.appendFile(filePath, "Hey there!", function(err) {
+    fs.appendFile(filePath, "\- [x] done2", function(err) {
         if(err) {
             return console.log(err);
         }
